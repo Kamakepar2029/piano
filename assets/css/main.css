@@ -3,7 +3,7 @@
         background: #000000;
     }
     25%{
-        background: #000000ba;
+        background: #2c2c2c;
     }
     50%{
         background: #5f3333;
@@ -34,4 +34,31 @@
 
 * {
     font-family: 'Nunito', sans-serif;
+}
+
+.piano {
+    height: 200px;
+    width: 500px;
+    border: 1px solid;
+    display: flex;
+}
+
+.piano .white {
+    height: 185px;
+    background: #e0e0e0e0;
+    width: 30px;
+    display: flex;
+    border: 1px solid;
+}
+
+.piano .black {
+    width: 30px;
+    height: 100px;
+    background: linear-gradient(180deg, #202020, #646464);
+    padding: 3px;
+}
+
+body {
+    margin: 0px;
+    background: #111c1c;
 }

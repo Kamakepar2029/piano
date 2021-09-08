@@ -17,8 +17,24 @@
         <div class="panel">
             
         </div>
-        <div class="piano">
-
+        <div class="piano_box">
+            <div class="piano">
+                <div class="white do"></div>
+                <div class="black dodies"></div>
+                <div class="white re"></div>
+                <div class="white mi"></div>
+                <div class="black midies"></div>
+                <div class="white fa"></div>
+                <div class="black fadies"></div>
+                <div class="white sol"></div>
+                <div class="black soldies"></div>
+                <div class="white lya"></div>
+                <div class="white si"></div>
+                <div class="black sidies"></div>
+                <div class="white do"></div>
+                <div class="black dodies1"></div>
+                <div class="white re"></div>
+            </div>
         </div>
         <div class="instruments">
 
@@ -27,4 +43,18 @@
 
         </div>
     </body>
+    <script>
+        function a(elem, index=0){
+            if (elem.includes('.')){
+                return document.getElementsByClassName(elem.split('.')[1])[index];
+            }
+            if (elem.includes('#')){
+                return document.getElementById(elem.split('#')[1])[index];
+            }
+            if (elem.includes('$')){
+                return document.getElementsByTagName(elem.split('$')[1])[index];
+            }
+        }
+        a('.preloader').remove();
+    </script>
 </html>
