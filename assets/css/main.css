@@ -38,9 +38,10 @@
 
 .piano {
     height: 200px;
-    width: 500px;
-    border: 1px solid;
+    width: 385px;
+    border: 1px solid #dededede;
     display: flex;
+    padding: 10px 20px;
 }
 
 .piano .white {
@@ -56,9 +57,38 @@
     height: 100px;
     background: linear-gradient(180deg, #202020, #646464);
     padding: 3px;
+    margin: 1px -10px;
+    z-index: 100000;
 }
 
 body {
     margin: 0px;
     background: #111c1c;
+}
+
+.piano_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    border-bottom: 1px solid #6c6c6c;
+}
+
+.panel {
+    display: flex;
+    width: 100%;
+    background: black;
+    height: 40px;
+    color: white;
+}
+
+.panel > .icns {
+    padding: 10px 20px;
+}
+
+.panel > .icns:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
 }
