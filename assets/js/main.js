@@ -8,54 +8,57 @@ function make_all_keys_unpressed(){
 
 addEventListener("keydown", function(e){
     let kp = e.key.toLowerCase();
+    console.log(kp);
     if (kp == 'а' || kp == 'f'){
         make_all_keys_unpressed();
         a('.do').style='background: red;';
-        do_note.currentTime = 1;
+        do_note;
         do_note.play();
     }
     if (kp == 'б' || kp == ','){
         make_all_keys_unpressed();
-        a('.re').style='background: red;';
-        re_note.currentTime = 1;
-        re_note.play();
+        a('.dodies').style='background: red;';
+        re_note;
+        do_dies.play();
     }
     if (kp == 'в' || kp == 'd'){
         make_all_keys_unpressed();
-        a('.mi').style='background: red;';
-        mi_note.currentTime = 1;
-        mi_note.play();
+        a('.re').style='background: red;';
+        mi_note;
+        re_note.play();
     }
     if (kp == 'г' || kp == 'u'){
         make_all_keys_unpressed();
-        a('.fa').style='background: red;';
-        fa_note.currentTime = 1;
-        fa_note.play();
+        a('.redies').style='background: red;';
+        fa_note;
+        re_dies.play();
     }
     if (kp == 'д' || kp == 'l'){
         make_all_keys_unpressed();
-        a('.sol').style='background: red;';
-        sol_note.currentTime = 1;
-        sol_note.play();
+        a('.mi').style='background: red;';
+        sol_note;
+        mi_note.play();
     }
     if (kp == 'е' || kp == 't'){
         make_all_keys_unpressed();
-        a('.lya').style='background: red;';
-        lya_note.currentTime = 1;
-        lya_note.play();
+        a('.fa').style='background: red;';
+        lya_note;
+        fa_note.play();
     }
     if (kp == 'ё' || kp == '`'){
         make_all_keys_unpressed();
-        a('.si').style='background: red;';
-        si_note.currentTime = 1;
-        si_note.play();
+        a('.fadies').style='background: red;';
+        si_note;
+        fa_dies.play();
     }
     if (kp == 'ж' || kp == ';'){
         make_all_keys_unpressed();
-        a('.do1').style='background: red;';
+        a('.sol').style='background: red;';
+        sol_note.play();
     }
     if (kp == 'з' || kp == 'p'){
         make_all_keys_unpressed();
-        a('.re1').style='background: red;';
+        a('.soldies').style='background: red;';
+        sol_dies.play();
     }
 });
